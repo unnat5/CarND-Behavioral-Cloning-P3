@@ -63,7 +63,8 @@ def telemetry(sid, data):
         imgString = data["image"]
         image = Image.open(BytesIO(base64.b64decode(imgString)))
         image_array = np.asarray(image)
-#         print(image_array.shape)
+        ## after preprocessing image size is changed to [100,320,3]
+        ## the idea is to crop the image so the model only sees the road lanes.
         steering_angle = float(model.predict(image_array[None, 60:, :, :], batch_size=1)) 
 
         throttle = controller.update(float(speed))
