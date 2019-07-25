@@ -35,7 +35,8 @@ python drive.py model.h5
 
 ## Model Architecture and Training Strategy
 1. **An appropriate model architecture has been employed**
-| Layer(type)         	|        Description	        				| Output shape | 
+
+| Layer(type)         	|        Description	        				          | Output shape| 
 |:---------------------:|:---------------------------------------------:|:------------:|
 | lambda_1 (Lambda)     | Normalized Image and preprocessed   | (None,100,320,3)|
 | conv2d_1 (Conv2D)     | filter=16,kernel_size=8,stride=4,padding="same"| (None,25,80,16)|
