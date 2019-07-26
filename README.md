@@ -83,4 +83,9 @@ I even used the data which was provided by udacity with the workspace. So my app
 
 I trained the model for 5 epochs with both datasets. 
 
+### Example of training data 
+The following are the example of images which are used to train the model from left, right and center camera after preprocessing e.g. cropping to only include road lanes and discard other information.
+<img src= "https://github.com/unnat5/CarND-Behavioral-Cloning-P3/blob/master/examples/data_example.png">
+
+
 
